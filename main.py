@@ -23,15 +23,16 @@ while not game_over:
     # TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
     guess = input("Guess a letter: ").lower()
 
-    # Remember every correct guess so letters found in earlier rounds stay revealed.
-    if guess in chosen_word:
-        correct_letters.append(guess)
-
     # TODO-5 - Build the display: reveal each letter that has been guessed and put "_" in the rest.
     # e.g. if the user guessed "p" and the chosen word was "apple", display should be _pp__
+    # TODO-7 - Update the for loop so that previous correct guesses are kept in the display
+    # instead of being replaced by "_" when the user makes a new guess.
     display = ""
     for letter in chosen_word:
-        if letter in correct_letters:
+        if letter == guess:
+            display += letter
+            correct_letters.append(guess)
+        elif letter in correct_letters:
             display += letter
         else:
             display += "_"
