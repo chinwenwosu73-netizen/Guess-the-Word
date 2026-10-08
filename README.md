@@ -24,6 +24,7 @@ python3 main.py
 
 ```
 aardvark
+________
 Guess a letter: a
 a
 Right
@@ -41,6 +42,7 @@ Wrong
 - [x] Pick a random word from a word list
 - [x] Ask the player for a lowercase letter guess
 - [x] Check the guess against each letter in the word
-- [ ] Show the word as blanks (`_ _ _`) and reveal correct letters
+- [x] Create a placeholder of blanks (`_____`), one per letter
+- [ ] Reveal correctly guessed letters in the placeholder
 - [ ] Let the player keep guessing until the word is complete
 - [ ] Add lives and a win/lose message

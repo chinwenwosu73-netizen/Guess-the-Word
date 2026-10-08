@@ -6,6 +6,14 @@ word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
+# TODO-4 - Create an empty string called placeholder. For each letter in the chosen_word, add a "_" to placeholder.
+# So if the chosen_word was "apple", placeholder should be "_____" with 5 "_" representing each letter to guess.
+placeholder = ""
+word_length = len(chosen_word)
+for position in range(word_length):
+    placeholder += "_"
+print(placeholder)
+
 # TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
 guess = input("Guess a letter: ").lower()
 print(guess)
