@@ -18,10 +18,14 @@ print(placeholder)
 guess = input("Guess a letter: ").lower()
 print(guess)
 
-# TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
-# Print "Right" if it is, "Wrong" if it's not.
+# TODO-5 - Create a "display" that puts the guess letter in the right positions and _ in the rest of the string.
+# Loop through each letter in the chosen_word. If the letter at that position matches guess, reveal that letter
+# in the display at that position. e.g. if the user guessed "p" and the chosen word was "apple",
+# then display should be _pp__
+display = ""
 for letter in chosen_word:
     if letter == guess:
-        print("Right")
+        display += letter
     else:
-        print("Wrong")
+        display += "_"
+print(display)
