@@ -11,6 +11,10 @@ guessing until every letter is revealed, then wins.
 
 This is the beginning of the project; more features will be added step by step.
 
+## Learning resources
+
+New to Python? Follow the [7-day beginner study guide](STUDY_GUIDE.md) to learn how to build this game from scratch, with practice exercises and a success checklist for each day.
+
 ## Requirements
 
 - Python 3
